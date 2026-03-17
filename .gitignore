@@ -1,0 +1,24 @@
+# venv
+venv/
+.env
+*.pyc
+__pycache__/
+.pytest_cache/
+.coverage
+
+# Docker volumes
+volumes/
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Arquivo específico
+pass.txt

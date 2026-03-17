@@ -1,0 +1,9 @@
+<h1>Bem-vindo, {{ user }}!</h1>
+<a href="/docs">API Docs</a> | <button onclick="fetchWord()">Palavra do Dia</button>
+<script>
+async function fetchWord() {
+    const token = localStorage.getItem('token');
+    const res = await fetch('/word/random', {headers: {Authorization: `Bearer ${token}`}});
+    console.log(await res.json());
+}
+</script>
